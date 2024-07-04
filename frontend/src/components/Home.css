@@ -1,0 +1,26 @@
+.genres-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.genre-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+  gap: 20px; /* Add space between items */
+  max-width: 800px; /* Set a maximum width for the grid container */
+  margin: 0 auto; /* Center the grid container */
+}
+
+.genre-image {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  width: 100%; /* Ensure images take full width of grid column */
+  height: 160px; /* Set fixed height */
+  object-fit: cover;
+  transition: transform 0.2s, box-shadow 0.2s; /* Add transition for smooth hover effect */
+}
+
+.genre-image:hover {
+  transform: scale(1.05); /* Scale up the image slightly */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth effect */
+}
